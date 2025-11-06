@@ -593,9 +593,7 @@ void CTFSpellBook::Precache()
 	PrecacheParticleSystem( "healshot_trail_blue" );
 	PrecacheParticleSystem( "healshot_trail_red" );
 	PrecacheParticleSystem( "xms_snowburst" );
-	PrecacheParticleSystem( "bomibomicon_ring" );
 	PrecacheParticleSystem( "bombinomicon_burningdebris" );
-	PrecacheParticleSystem( "merasmus_tp_bits" );
 	PrecacheParticleSystem( "spell_fireball_tendril_parent_red" );
 	PrecacheParticleSystem( "spell_fireball_tendril_parent_blue" );
 	PrecacheParticleSystem( "spell_fireball_small_blue" );

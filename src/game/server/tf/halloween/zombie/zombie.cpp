@@ -110,7 +110,6 @@ void CZombie::PrecacheZombie()
 		}
 	}
 
-	PrecacheParticleSystem( "bomibomicon_ring" );
 	PrecacheParticleSystem( "spell_pumpkin_mirv_goop_red" );
 	PrecacheParticleSystem( "spell_pumpkin_mirv_goop_blue" );
 	PrecacheParticleSystem( "spell_skeleton_goop_green" );
