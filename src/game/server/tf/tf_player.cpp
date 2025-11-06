@@ -7343,7 +7343,7 @@ bool CTFPlayer::ClientCommand( const CCommand &args )
 	if ( FStrEq( pcmd, "jointeam" ) )
 	{
 		// don't let them spam the server with changes
-		if ( GetNextChangeTeamTime() > gpGlobals->curtime )
+		if ( GetNextChangeTeamTime() > gpGlobals->curtime && GetTeamNumber() != TEAM_UNASSIGNED )
 			return true;
 
 		SetNextChangeTeamTime( gpGlobals->curtime + 2.0f );  // limit to one change every 2 secs
@@ -14763,10 +14763,7 @@ void CTFPlayer::CheatImpulseCommands( int iImpulse )
 
 					pWeapon->GiveDefaultAmmo();
 
-					if ( pWeapon->IsEnergyWeapon() )
-					{
-						pWeapon->WeaponRegenerate();
-					}
+					pWeapon->WeaponRegenerate();
 				}
 
 				m_Shared.m_flRageMeter = 100.f;
